@@ -7,7 +7,8 @@
     "build": "vite build",
     "dev": "vite --host 127.0.0.1 --port 5173",
     "preview": "vite preview --host 127.0.0.1 --port 4173",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy:cloudflare": "npm run build && npx wrangler pages deploy dist --project-name edgekit-demo-ecommerce --branch main --commit-dirty=true"
   },
   "dependencies": {
     "@kevinmarmstrong/edgekit": "file:vendor/kevinmarmstrong-edgekit-0.1.0.tgz",
