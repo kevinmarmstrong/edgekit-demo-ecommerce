@@ -7,7 +7,7 @@ Live URLs:
 - Cloudflare Pages COOP/COEP mirror: https://edgekit-demo-ecommerce.pages.dev/
 - GitHub Pages fallback/no-model proof: https://kevinmarmstrong.github.io/edgekit-demo-ecommerce/
 
-This repo currently installs Edgekit from vendored packed tarballs in `vendor/` because the v0.3 packages are not published to npm yet. Once packages are published, replace the `file:vendor/*.tgz` dependencies with normal semver ranges.
+This repo installs Edgekit from the published `@kevinmarmstrong/*` npm packages.
 
 ## Quickstart
 
